@@ -9,6 +9,7 @@ bot = telebot.TeleBot(TOKEN)
 
 name_bot = "MySpamBot"
 
+
 @bot.message_handler(commands=['spam'])
 def spam(message):
     params = message.text.split()[1:]
